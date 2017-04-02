@@ -74,7 +74,7 @@ def DirFileCount(mydir):
 
 
     
-#File Search by keyword function
+#File Search by name function
 def FileSearchByKeyword():                 
     for dirpath, dirs, files in os.walk(mydir):
         for mfile in files:
@@ -165,40 +165,6 @@ def Zipbacky():
     else:
         print('Backup FAILED!')
 
-
-# Single file scan function
-def SingleFileScan():
-    if not os.path.isdir(filepath):
-        try:
-            fs = open(filepath)
-            for line in fs:
-                if re.match(r"(.*)%s(.*)" % res, line, re.IGNORECASE):
-                    print(line)
-        except UnicodeDecodeError:
-            pass
-        except UnicodeEncodeError:
-            pass
-            fs.close()
-
-
-# Multiple files scan function
-def MultipleFileScan():
-    for dirpath, dirs, files in os.walk(mydir):
-        for mfile in files:
-            path = os.path.join(dirpath, mfile)
-            path = os.path.normpath(path)
-            #if os.path.splitext(path)[1] == '.txt':
-            try:
-                fs = open(path)
-                for line in fs:
-                    if re.match(r"(.*)%s(.*)" % res, line, re.IGNORECASE):
-                        print(line + ' :Found in ' + path)
-            except UnicodeDecodeError:
-                pass
-            except UnicodeEncodeError:
-                pass
-                fs.close()
-
 #**********************************************************************
 
 # Decision Menu
@@ -236,7 +202,6 @@ if choice == "3":
 if choice == "4":
     clear_screen
     Zipbacky()
-
 
 
 if choice == "5":
