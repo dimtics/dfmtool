@@ -1,2 +1,2 @@
 # dfmtool
-A work-in-progress repo for developing a directory and file management tool.
+A work-in-progress repo for a directory and file management tool deelopment.
