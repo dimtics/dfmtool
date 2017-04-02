@@ -1,7 +1,7 @@
 """
 @author: Oladimeji Salau
 
-Purpose: A python code to seach computer for a given file name and returns the file location.
+Purpose: A python code to search computer for a given file name and returns the file location.
 
 How to use it
 ==============
