@@ -1,5 +1,4 @@
 """
-Created on Wed Mar 15 2017
 @author: Oladimeji Salau
 
 Purpose: A python code to properly counts files in a given directory and returns the result.
